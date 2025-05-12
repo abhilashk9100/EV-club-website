@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ev Club</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+</head>
+
+<body>
+  <div class="nav-container">
+
+
+    <nav class="width0">
+      <div onclick="toggle()" class="cros"><i style="color: black;" class="toggle1 fa-solid fa-bars  "></i></div>
+      <ul >
+        <li class="nav-link"><a style="color: black; font-size: 1.5em;" href="#">Home</a></li>
+        <li class="nav-link"><a style="color: black; font-size: 1.5em;" href="#ABOUT">About</a></li>
+        <li class="nav-link"><a style="color: black; font-size: 1.5em;" href="#">Our Team</a></li>
+        <li class="nav-link"><a style="color: black; font-size: 1.5em;" href="archive.html">Archives</a></li>
+
+      </ul>
+    </nav>
+  </div>
+
+  <div class="hero">
+
+    <div class="parallax-layer layer-5"></div>
+    <div class="parallax-layer layer-4"></div>
+    <div class="parallax-layer layer-3"></div>
+    <div class="parallax-layer car-1"></div>
+    <div class="parallax-layer car-2"></div>
+    <div class="parallax-layer scooter-1"></div>
+    <div class="parallax-layer scooter-2"></div>
+    <div class="parallax-layer layer-2"></div>
+    <div class="parallax-layer layer-1"></div>
+
+    <div class="logo">
+      <img src="assets/Ev Club.png" alt="" />
+      <div class="tag-line">
+        <h2>Driving Change, One Charge at a Time</h2>
+      </div>
+    </div>
+
+  </div>
+ 
+
+
+  <div class="projects">
+    <div class="projects-heading ">
+      <h1>PROJECTS</h1>
+    </div>
+
+
+    <!-- card container starts here -->
+    <div class="swiper-container" style="height: 90vh;">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" style="background-image:url('car.png')"></div>
+        <div class="swiper-slide" style="background-image:url('car2.png')"></div>
+        <div class="swiper-slide" style="background-image:url('bike1.png')" ></div>
+        <!-- Add more slides as needed -->
+      </div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+      <!-- Add Navigation -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+
+
+
+
+    <div class="Events">
+      <div class="events-heading">Events</div>
+
+      <div class="event-cards">
+        <div class="event-card ev-tour">
+          <div class="event-heading ">EV Tour</div>
+          <div class="event-about">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est accusamus beatae cum cumque sit, porro aspernatur minima quasi rem rerum explicabo voluptates in repellat voluptatem voluptate quae pariatur, obcaecati modi provident deserunt magni?\
+          </div>
+        </div>
+
+        <div class="event-cards">
+          <div class="event-card ev-tour">
+            <div class="event-heading ">EV Tour</div>
+            <div class="event-about">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est accusamus beatae cum cumque sit, porro aspernatur minima quasi rem rerum explicabo voluptates in repellat voluptatem voluptate quae pariatur, obcaecati modi provident deserunt magni?\
+            </div>
+          </div>
+
+          <div class="event-cards">
+            <div class="event-card ev-tour">
+              <div class="event-heading ">EV Tour</div>
+              <div class="event-about">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est accusamus beatae cum cumque sit, porro aspernatur minima quasi rem rerum explicabo voluptates in repellat voluptatem voluptate quae pariatur, obcaecati modi provident deserunt magni?\
+              </div>
+            </div>
+      </div>
+    </div>
+
+
+
+
+
+
+  <script src="script.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper('.swiper-container', {
+        effect: 'cube',
+        grabCursor: true,
+        cubeEffect: {
+          shadow: true,
+          slideShadows: true,
+          shadowOffset: 20,
+          shadowScale: 0.94,
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+    </script>
+
+
+
+
+
+
+
+
+
+<footer>
+  <div class="flex">
+    <div class="footer-top">
+      <div class="photo">
+          <img id=vector src="assets/bike1.png"> 
+          <p >Electrical Vehicle Club </p>
+      </div>
+      <div class="box1"><h1>SITE MAP</h1>
+          <br>
+          <a href="#">HOME</a><br><a href="#">EVENTS</a><br><a href="#">PROJECTS</a><br><a href="#">CONTACTS</a></div>
+       
+     <div class="box1"><h1>CONTACT US</h1>
+      <br> <br>
+      <p id="add">9899r84723 <br >  ev@gmail.ocm</p>
+  </div>
+  </div>
+
+      <!-- <div class="radial-gradient"></div> -->
+      <div class="footer-line line"></div>
+      <div class="comment-and-time">  
+       
+              
+            
+              <div class="contacts">
+                  <i  id="in" class="social-media fa-brands fa-instagram fa-2x" style="color: #000000;"></i>
+                  <i  id="fa"class="social-media fa-brands fa-facebook-f fa-2x" style="color: #000000;"></i>
+                  <i  id=" li"class="social-media fa-brands fa-linkedin-in fa-2x" style="color: #000000;"></i>
+                  <i   id="yu" class="social-media fa-brands fa-youtube fa-2x" style="color: #000000;"></i>
+              </div>
+                     
+             
+         
+
+         
+      
+ </div>
+
+</footer>
+<script src="https://kit.fontawesome.com/ba3380dd9e.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

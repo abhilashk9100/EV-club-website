@@ -1,0 +1,527 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Inter:wght@800&family=Pacifico&family=Poppins:ital,wght@0,200;0,300;0,400;1,200&family=Rubik+Iso&family=Varela+Round&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: "audiowide";
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  /* scrollbar-width: none; */
+  overflow-x: hidden;
+  margin: auto;
+  background-color: #023C5D;
+}
+
+.hero {
+  width: 100vw;
+  height: 100vh;
+  min-height: 450px;
+  overflow-x: hidden;
+  position: relative;
+  top: 0;
+  left: 0;
+  background-color: #d9edfd;
+}
+
+
+.layer-1 {
+  animation: fore-ground-movement linear 30s infinite both;
+  background: url(assets/2.png) 0 110% repeat-x;
+  z-index: 1;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: auto 145px;
+}
+
+.layer-2 {
+  animation: fore-ground-movement linear 55s infinite both;
+  background: url(assets/3.png) 0 110% repeat-x;
+  z-index: 1;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: auto 158px;
+}
+
+.layer-3 {
+  animation: fore-ground-movement linear 75s infinite both;
+  background: url(assets/4.png) 0 110% repeat-x;
+  z-index: 1;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: auto 468px;
+}
+
+.layer-4 {
+  animation: fore-ground-movement linear 95s infinite both;
+  background: url(assets/5.png) 0 110% repeat-x;
+  z-index: 1;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: auto 311px;
+}
+
+.layer-5 {
+  animation: fore-ground-movement linear 120s infinite both;
+  background: url(assets/6.png) 0 110% repeat-x;
+  z-index: 1;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: auto 222px;
+}
+
+.car-1,
+.car-2 {
+  background: url(assets/car2.png) 0 100% no-repeat;
+  z-index: 1;
+  position: absolute;
+  bottom: 60px;
+  left: 0;
+  width: 300%;
+  height: 300%;
+  background-size: auto 150px;
+}
+
+.scooter-1,
+.scooter-2 {
+  background: url(assets/scooter.png) 0 100% no-repeat;
+  z-index: 1;
+  position: absolute;
+  bottom: 100px;
+  left: 0;
+  width: 300%;
+  height: 300%;
+  background-size: auto 90px;
+}
+
+.scooter-1 {
+  animation: movement_car linear 15s 1s infinite both reverse;
+}
+
+.scooter-2 {
+  animation: movement_car linear 10s infinite both reverse;
+}
+
+.car-1 {
+  animation: movement_car linear 10s 3s infinite both;
+}
+
+.car-2 {
+  animation: movement_car linear 15s infinite both;
+}
+
+@-webkit-keyframes fore-ground-movement {
+  0% {
+    background-position: 2765px 100%;
+  }
+
+  100% {
+    background-position: 550px 100%;
+  }
+}
+
+@keyframes fore-ground-movement {
+  0% {
+    background-position: 2765px 100%;
+  }
+
+  100% {
+    background-position: 550px 100%;
+  }
+}
+
+@-webkit-keyframes movement_car {
+  0% {
+    background-position: -300px 100%;
+  }
+
+  100% {
+    background-position: 2000px 100%;
+  }
+}
+
+@keyframes movement_car {
+  0% {
+    background-position: -300px 100%;
+  }
+
+  100% {
+    background-position: 2000px 100%;
+  }
+}
+
+.logo {
+  margin: 30vh auto;
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+}
+
+.logo img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.tag-line {
+  text-align: center;
+  font-size: 1.5em;
+  color: white;
+  font-family: monospace;
+  text-shadow: -2px 2px rgb(0, 33, 134);
+}
+
+@media (max-width: 700px) {
+  .logo img {
+    max-width: 90%;
+  }
+}
+
+.nav-container {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+
+}
+
+nav {
+  overflow: hidden;
+  background-color: #ffffff7b;
+  position: fixed;
+  overflow: hidden;
+  transition: 1s;
+  margin: 15px auto;
+  /* color: black; */
+  z-index: 100;
+  width: 70vw;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+}
+
+nav ul {
+  list-style: none;
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+nav li {
+  padding: 10px 20px;
+}
+
+@media (max-width: 700px) {
+  nav li {
+    width: 50%;
+    text-align: center;
+  }
+}
+
+nav a {
+  /* Tilmelding: */
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.25em;
+  color: black;
+  text-transform: uppercase;
+  /* color: #fff; */
+}
+
+.projects-heading {
+  width: 100vw;
+  text-align: center;
+}
+
+.cros {
+  display: none;
+}
+
+
+@media screen and (max-width:800px) {
+
+  .nav-container {
+    width: 30%;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  nav {
+    height: auto;
+    width: 55%;
+    padding-top: 40px;
+    padding-left: 40px;
+    
+  }
+
+  .cros {
+    position: absolute;
+    top: 0px;
+    left: 60px;
+    font-size: 2em;
+    display: unset;
+    cursor: pointer;
+  }
+}
+
+
+/* new work */
+.swiper-container {
+  width: 100vw;
+  height: 50vh;
+}
+
+.swiper-slide {
+  background-size: cover;
+  background-position: center;
+}
+
+
+/* footer starts here  */
+.main {
+  display: flex;
+  flex-direction: column;
+ 
+  gap: 0.5em;
+}
+.line{
+    width: 90vw;
+    height: 2px;
+    margin: 40px auto;
+    background-color: #000000;
+}
+
+footer{
+  background-color: #00486f00;
+  height: auto;
+  width: 90vw;
+  /* position: absolute; */
+
+  bottom: 0;
+
+  
+}
+
+.flex{
+
+  justify-content:center ;
+  flex-direction: row;
+  margin: 40px;
+  
+
+
+
+}
+.footer-top{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  flex-wrap:  wrap;
+}
+@media screen and (max-width:660px) {
+.footer-top{
+
+  justify-content: center;
+} 
+}
+
+.line{
+width: 90%;
+height: 2px; 
+margin: 20px auto;
+background-color:#000000;
+
+}
+.comment-and-time{
+display: flex;
+flex: wrap;
+width: 70vw;
+margin: auto;
+align-items: center;
+justify-content: space-between;
+}
+
+
+.photo{
+text-align: center;
+}
+.photo p{
+width: 200px;
+font-size: 1.5em;
+
+}
+
+
+.tym {
+display: flex;
+margin-bottom: 20px;
+
+
+}
+.comment-and-time{
+width: 85vw;
+display: flex;
+flex-wrap: wrap;
+margin: auto;
+align-items: center;
+justify-content: space-between;
+}
+#vector{
+  width: 100px;
+  margin-bottom: 10px;
+  
+}
+
+#tym p{
+  color:#000000;
+}
+
+
+
+a{
+  color:#000000;
+  text-decoration: none;
+ 
+
+}
+.contacts{
+  display: flex;
+  justify-content: space-evenly;
+  width: 100vw;
+}
+.contacts #in {
+   
+    margin-left: 0;
+}
+
+
+@media screen and (max-width:370px) {
+  .comment-and-time{
+    justify-content: center;
+  }
+}
+.contacts{
+  min-width: 200px;
+}
+
+.social-media{
+margin: auto 10px;
+}
+
+.events-heading{
+  font-size: 5vw ; 
+  color: rgb(255, 255, 255);
+  text-align: center;
+  width: 100vw;
+}
+.event-cards{
+  width: 90vw;
+  margin: auto;
+}
+.event-heading{
+  font-size: 3vw;
+  padding-bottom: 2%;
+}
+.event-card{
+  width: 90vw;
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin: 50px auto;
+
+}
+.ev-tour{
+  background-image: url(assets/mg-ev-tour-at-trinity-leeds-e1697208534381.jpg);
+  background-size:cover;
+  background-color: #023c5d4f;
+  mix-blend-mode:hard-light;
+  background-repeat: no-repeat;
+
+}
+.event-about{
+  width: 70%;
+  text-align: center;
+  font-size: 2vw;
+}
+.post-name{
+  color: white;
+  font-size: 2em;
+}
+
+.width0{
+  background-color: rgba(255, 255, 255, 0);
+  backdrop-filter: blur(0px);
+  height: 20px;
+}
+@media  screen and (min-width:800px) {
+    .width0{
+      background-color: rgba(255, 255, 255, 0.348);
+      height: auto;
+      backdrop-filter: blur(4px);
+    }
+
+/* archive starts here */
+.wrapper{
+  width: 100%;
+  background:url(assets/static/5559852.jpg);
+  background-size: cover;
+
+}
+
+.events{
+  width: 100%;
+}
+.events h2{
+  
+  text-align: center;
+  padding: 5% 0% 2% 1%;
+
+}
+.cards{
+  width: 90%;
+  margin: auto;
+  display: flex;
+  
+  font-size: small;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.card{
+  flex-basis: 30%;
+  margin: 10px 0px;
+  box-shadow: 0px 0px 10px 3px rgb(67, 57, 57) ;
+}
+@media only screen and (min-width:50px) and (max-width:768px) {
+  .cards{
+      width: 100%;
+      flex-direction: column;
+  }
+  .card{
+      margin:5%;
+  }
+}}
